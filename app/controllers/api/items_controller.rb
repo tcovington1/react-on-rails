@@ -37,6 +37,6 @@ class Api::ItemsController < ApplicationController
 
   private
   def item_params
-    parms.require(:item).permit(:todo_name, :complete)
+    params.require(:item).permit(:todo_name, :complete)
   end
 end
